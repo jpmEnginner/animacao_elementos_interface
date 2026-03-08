@@ -1,0 +1,144 @@
+/*Layout*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 2px;
+    padding: 15px;
+}
+
+
+/*Button*/
+
+button {
+    outline: 0;
+    width: 100px;
+    height: 40px;
+    background-color: #808080;
+    color: #1e1e1e;
+    border: 0;
+    padding-bottom: 10px;
+
+    transition: padding-top .5s ease,
+                box-shadow 1s linear;
+}
+
+button:active {
+    transform: scale(.95);
+    font-weight: bold;
+    box-shadow: 0 3px 10px #1e1e1e,
+                3px 0 10px #808080;
+}
+
+button:hover,
+button:focus {
+    box-shadow: 0 0 10px #1e1e1e;
+    background-color: #1e1e1e;
+    padding-top: 5px;
+    color: #fff;
+    border-bottom: 20px solid #1e1e1e;
+
+    transition: border-bottom 1s ease-out,
+                background-color 1s ease,
+                box-shadow 1ms linear;
+}
+
+
+/*Input*/
+input {
+    outline: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px #808080 solid;
+    background: transparent;
+
+    transition: border-bottom 1s,
+                text-shadow 4s ease,
+                box-shadow 1s linear;
+}
+
+/* foco no campo */
+input:focus {
+    border-bottom: 2px #1e1e1e solid;
+    box-shadow: 0 2px 2px #1e1e1e inset;
+}
+
+/* placeholder no foco */
+input:focus::placeholder {
+    text-shadow: 0 0 2px #1e1e1e;
+    color: #808080;
+}
+
+input::placeholder {
+    color: #1e1e1e;
+    text-shadow: 0 0 0 #1e1e1e;
+    opacity: 1;
+    transition: text-shadow 4s ease;
+}
+/*INICIO DO FLOATING*/
+
+/* contêiner relativo */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/*esconde o placeholder*/
+.input-group input::placeholder {
+    color: transparent;
+}
+
+/* estado inicial do label (sobre o texto) */
+.input-group label{
+    position: absolute;
+    left: 50%;                 
+    top : 50%;                 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    color: #808080;
+    pointer-events: none;
+
+    transition: transform .25s ease,
+                font-size  .25s ease,
+                color      .25s ease;
+}
+
+/*Flutuacao do label*/
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label{
+    left: 50%;                 
+    top : 0;                   
+    transform: translate(-50%, -130%) scale(.85);
+    font-size: .8rem;
+    color: #1e1e1e;
+}
+
+.input-group input:hover {
+    border-bottom: 1.5px solid #1e1e1e;
+}
+
+.input-group input:hover::placeholder {
+    text-shadow: 0 0 1px #1e1e1e;
+    color: #808080;
+}
+
+.input-group input:hover + label {
+    color: #1e1e1e;
+}
