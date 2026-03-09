@@ -1,0 +1,974 @@
+/*PARTES ESPECIFICAS DAS PAGINAS EM CSS*/
+
+@import url('./main/styles.css');
+
+/*pagina de login*/
+.login-container {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.login-form-wrapper {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.form-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.form-logo-image {
+    height: 6rem;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.form-logo-image:hover {
+    transform: scale(1.05);
+}
+
+.login-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login-form {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+}
+
+.input-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1.5rem 1.8rem;
+    border: 0.2rem solid #e9ecef;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+}
+
+.form-input::placeholder {
+    color: #6c757d;
+}
+
+.btn {
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn--primary {
+    background-color: #007bff;
+    color: #fff;
+    width: auto; 
+    padding: 1.6rem 3rem; 
+    justify-self: center;
+}
+
+.btn--primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-0.2rem);
+}
+
+.btn--primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+}
+
+.btn--primary:active {
+    transform: translateY(0);
+}
+
+
+/*pagina de cadastro*/
+.signup-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.signup-text {
+    color: #6c757d;
+    font-size: 1.4rem;
+}
+
+.signup-link-text {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link-text:hover {
+    text-decoration: underline;
+}
+
+.signup-link-text:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+    border-radius: 0.4rem;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.signup-form-wrapper {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.signup-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.signup-form {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.input-group--full {
+    grid-column: 1 / -1;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.login-text {
+    color: #6c757d;
+    font-size: 1.4rem;
+}
+
+.login-link-text {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link-text:hover {
+    text-decoration: underline;
+}
+
+.login-link-text:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+    border-radius: 0.4rem;
+}
+
+/*pagina inicial (usuario)*/
+.construction-container {
+    width: 100%;
+    max-width: 55rem;
+    text-align: center;
+}
+
+.construction-content {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.construction-image {
+    width: 100%;
+    max-width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.construction-image-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.construction-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+
+.construction-text {
+    color: #6c757d;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 45rem;
+    margin-bottom: 1rem;
+}
+
+.construction-btn {
+    margin-top: 1rem;
+}
+
+/*dashboard do administrador*/
+.main--dashboard {
+    align-items: start;
+    padding: 2rem;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 90rem;
+    display: grid;
+    gap: 3rem;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.main-metric {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.main-metric-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-metric-label {
+    font-size: 1.4rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.main-metric-value {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #212529;
+    line-height: 1;
+}
+
+.main-metric-change {
+    font-size: 1.3rem;
+    color: #6c757d;
+}
+
+.change-positive {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.change-negative {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.chart-container {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+}
+
+/*===== PÁGINA DE GERENCIAR DENÚNCIAS - RESPONSIVIDADE =====*/
+
+/* === ESTILOS GERAIS DENÚNCIAS === */
+.main--denuncias {
+    align-items: start;
+    padding: 2rem;
+    min-height: calc(100vh - 12rem);
+}
+
+.denuncias-container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.denuncias-header {
+    margin-bottom: 3rem;
+}
+
+.denuncias-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.denuncias-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.denuncias-table-container {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+}
+
+.denuncias-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.denuncias-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+}
+
+.denuncias-table-header {
+    background-color: #f8f9fa;
+}
+
+.denuncias-th {
+    padding: 1.5rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 0.1rem solid #e9ecef;
+    white-space: nowrap;
+}
+
+.denuncias-table-body .denuncias-row {
+    border-bottom: 0.1rem solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.denuncias-table-body .denuncias-row:hover {
+    background-color: #f8f9fa;
+}
+
+.denuncias-table-body .denuncias-row:last-child {
+    border-bottom: none;
+}
+
+.denuncias-td {
+    padding: 1.5rem 1rem;
+    color: #6c757d;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Centralização específica para status e ações */
+.denuncias-th--status,
+.denuncias-th--acoes,
+.denuncias-td--status,
+.denuncias-td--acoes {
+    text-align: center;
+}
+
+.denuncias-actions-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*===== PÁGINA DE GERENCIAR USUÁRIOS =====*/
+.main--users {
+    align-items: start;
+    padding: 2rem;
+    min-height: calc(100vh - 12rem);
+}
+
+.users-container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.users-header {
+    margin-bottom: 3rem;
+}
+
+.users-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.users-title-section {
+    flex: 1;
+}
+
+.users-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.users-subtitle {
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 60rem;
+}
+
+.search-container {
+    margin-bottom: 3rem;
+    width: 100%; /* Ocupa toda a largura do container */
+}
+
+.users-table-container {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* Garantia de largura total */
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+}
+
+.users-table .table-header {
+    background-color: #f8f9fa;
+}
+
+.users-table .table-th {
+    padding: 1.5rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 0.1rem solid #e9ecef;
+    white-space: nowrap;
+}
+
+.users-table .table-body .table-row {
+    border-bottom: 0.1rem solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.users-table .table-body .table-row:hover {
+    background-color: #f8f9fa;
+}
+
+.users-table .table-body .table-row:last-child {
+    border-bottom: none;
+}
+
+.users-table .table-td {
+    padding: 1.5rem 1rem;
+    color: #6c757d;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Centralização específica para colunas de função, status e ações */
+.users-table .table-th:nth-child(3), /* Função */
+.users-table .table-th:nth-child(4), /* Status */
+.users-table .table-th:nth-child(5), /* Ações */
+.users-table .table-td:nth-child(3),
+.users-table .table-td:nth-child(4),
+.users-table .table-td:nth-child(5) {
+    text-align: center;
+}
+
+.users-table .table-th:nth-child(5),
+.users-table .table-td:nth-child(5) {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*===== PÁGINA DE DETALHES DA DENÚNCIA =====*/
+.main--denuncia-details {
+    align-items: start;
+    padding: 2rem;
+    min-height: calc(100vh - 12rem);
+}
+
+.denuncia-details-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.denuncia-details-header {
+    margin-bottom: 3rem;
+}
+
+.denuncia-details-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.denuncia-details-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.denuncia-details-card {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.denuncia-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.denuncia-section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #f8f9fa;
+}
+
+.denuncia-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.8rem;
+}
+
+.denuncia-user-avatar {
+    flex-shrink: 0;
+}
+
+.user-avatar-img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3rem solid #e9ecef;
+}
+
+.denuncia-user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.denuncia-user-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+}
+
+.denuncia-user-id {
+    font-size: 1.4rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.denuncia-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.denuncia-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.denuncia-info-item--full {
+    grid-column: 1 / -1;
+}
+
+.denuncia-info-label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.denuncia-info-value {
+    font-size: 1.5rem;
+    color: #212529;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.6rem;
+    border-left: 0.4rem solid #007bff;
+}
+
+.denuncia-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*===== MODAL DE EDIÇÃO DE USUÁRIO (com menu de sobreposicao na pagina de gerenciar usuarios) =====*/
+.edit-user-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.edit-user-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.edit-user-modal {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 50rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: translateY(-3rem);
+    transition: transform 0.3s ease;
+}
+
+.edit-user-overlay.active .edit-user-modal {
+    transform: translateY(0);
+}
+
+.edit-user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    border-bottom: 0.1rem solid #e9ecef;
+    background-color: #f8f9fa;
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.edit-user-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.edit-user-close {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.3s ease;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-user-close:hover {
+    color: #dc3545;
+}
+
+.edit-user-form {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 8rem);
+}
+
+.edit-user-content {
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.edit-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.edit-field-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.edit-field-input,
+.edit-field-select {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: 0.2rem solid #e9ecef;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    background-color: #fff;
+    color: #495057;
+    transition: all 0.3s ease;
+}
+
+.edit-field-input:focus,
+.edit-field-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+    background-color: #fff;
+}
+
+.edit-field-input::placeholder {
+    color: #adb5bd;
+}
+
+.edit-field-select {
+    cursor: pointer;
+}
+
+.edit-field-select option {
+    padding: 1rem;
+    color: #495057;
+}
+
+.edit-user-actions {
+    padding: 2rem 3rem;
+    border-top: 0.1rem solid #e9ecef;
+    background-color: #f8f9fa;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.btn-edit-cancel,
+.btn-edit-save {
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 12rem;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit-cancel {
+    background-color: #6c757d;
+    color: #fff;
+    border: 0.2rem solid #6c757d;
+}
+
+.btn-edit-cancel:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.4rem 1.2rem rgba(108, 117, 125, 0.3);
+}
+
+.btn-edit-save {
+    background-color: #28a745;
+    color: #fff;
+    border: 0.2rem solid #28a745;
+}
+
+.btn-edit-save:hover:not(:disabled) {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.4rem 1.2rem rgba(40, 167, 69, 0.3);
+}
+
+.btn-edit-save:disabled {
+    background-color: #94d3a2;
+    border-color: #94d3a2;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-edit-cancel:focus,
+.btn-edit-save:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-edit-cancel:active,
+.btn-edit-save:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+
+/* Estados da página (animacao das denuncias) + estilizacao*/
+.loading-state, .error-state, .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-retry {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-retry:hover {
+    background-color: #0056b3;
+}
+
+/* Status das denúncias */
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+
+.status--open {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status--pending {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.status--analyzing {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status--closed {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.status--default {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/*desabilita o botao na denuncia*/
+.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #6c757d !important;
+}
+
+.btn-disabled:hover {
+    background-color: #6c757d !important;
+}
