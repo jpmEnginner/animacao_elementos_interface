@@ -1,4 +1,4 @@
-import { useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './UserList.styles';
 import EditUserModal from '../EditUserModal/EditUserModal';
@@ -81,13 +81,13 @@ export default function UserList({ onBack }) {
   //   }
   // }
 
-async function fetchUsers() {
+  async function fetchUsers() {
     try {
       setLoading(true);
       console.log('loading:', true); // adiciona aqui
       const res = await api.get('/usuarios');
       const data = Array.isArray(res.data.data) ? res.data.data : res.data;
-      
+
       setTimeout(() => {
         setUsers(data.map(mapData));
         setError(null);
@@ -100,7 +100,7 @@ async function fetchUsers() {
       console.error(err);
       setLoading(false);
     }
-}
+  }
 
 
 
@@ -156,26 +156,27 @@ async function fetchUsers() {
   );
 
 
-  console.log('Skeleton:', S.SkeletonBase, S.SkeletonTitle, S.SkeletonTable);
+
   if (loading) {
     return (
-      <S.Main>
-        <S.Container>
+      <S.SkeletonMain>
+        <S.SkeletonContainer>
 
-          <S.HeaderLine>
-            <S.TitleSection>
+          <S.SkeletonHeaderLine>
+            <S.SkeletonTitleSection>
               <S.SkeletonTitle />
+              
               <S.SkeletonSubtitle />
-            </S.TitleSection>
-          </S.HeaderLine>
+            </S.SkeletonTitleSection>
+          </S.SkeletonHeaderLine>
 
           <S.SkeletonWrapper>
             <S.SkeletonSearch />
             <S.SkeletonTable />
           </S.SkeletonWrapper>
 
-        </S.Container>
-      </S.Main>
+        </S.SkeletonContainer>
+      </S.SkeletonMain>
     );
   }
 

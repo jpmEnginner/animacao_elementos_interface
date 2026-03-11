@@ -3,6 +3,8 @@ import styled, { keyframes } from 'styled-components';
 const tablet  = '@media (min-width:768px)';
 const desktop = '@media (min-width:1024px)';
 
+// tenho que fazer um main pro skeleton ,pq o tamanho do main do que renderiza eh diferente 
+
 /* --- layout base --- */
 export const Main = styled.main`
   padding: 2rem;
@@ -148,6 +150,37 @@ export const Td = styled.td`
 const shimmer = keyframes`
   0%   { background-position: -200% 0; }
   100% { background-position:  200% 0; }
+`;
+
+export const SkeletonMain = styled.main`
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* adiciona isso */
+  width: 100%;              /* e isso */
+
+  ${tablet}  { padding: 3rem 2rem; }
+  ${desktop} { padding: 4rem 2rem; }
+`;
+
+export const SkeletonContainer = styled.section`
+  width: 100%;
+  max-width: 120rem;
+`;
+
+export const SkeletonHeaderLine = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+`;
+
+export const SkeletonTitleSection = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 export const SkeletonWrapper = styled.div`
